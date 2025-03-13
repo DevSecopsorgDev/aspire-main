@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/ide.host",
+  "icon": "ide/AspireServiceDefaults.ico",
+  "displayOverviewPage": "0",
+  "symbolInfo": [
+    {
+      "id": "AspireVersionCli",
+      "isVisible": false
+    },
+    {
+      "id": "AspireVersion",
+      "isVisible": true,
+      "persistenceScope": "shared",
+      "persistenceScopeName": "aspireTemplates"
+    },
+    {
+      "id": "AspireVersionNet9",
+      "isVisible": true,
+      "persistenceScope": "shared",
+      "persistenceScopeName": "aspireTemplates"
+    }
+  ],
+  "unsupportedHosts": [
+    {
+      "id": "vs",
+      "version": "(,17.9)"
+    }
+  ]
+}

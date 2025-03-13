@@ -1,0 +1,17 @@
+<Project>
+
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+
+  <PropertyGroup>
+    <IsAotCompatible>true</IsAotCompatible>
+    <EnableConfigurationBindingGenerator>true</EnableConfigurationBindingGenerator>
+    <!-- This is a temporary workaround for https://github.com/dotnet/roslyn/issues/76600. -->
+    <NoWarn>$(NoWarn);CS9270</NoWarn>
+
+    <ComponentCommonPackageTags>aspire integration client component cloud</ComponentCommonPackageTags>
+    <ComponentCachePackageTags>$(ComponentCommonPackageTags) cache caching</ComponentCachePackageTags>
+    <ComponentDatabasePackageTags>$(ComponentCommonPackageTags) data database</ComponentDatabasePackageTags>
+    <ComponentEfCorePackageTags>$(ComponentDatabasePackageTags) ef efcore entityframework entityframeworkcore entity-framework-core o/rm</ComponentEfCorePackageTags>
+    <ComponentAzurePackageTags>$(ComponentCommonPackageTags) azure</ComponentAzurePackageTags>
+  </PropertyGroup>
+</Project>
