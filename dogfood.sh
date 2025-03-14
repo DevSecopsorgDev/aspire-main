@@ -46,3 +46,5 @@ echo Setting BUILT_NUGETS_PATH="$PKG_DIR" to resolve locally built packages
 export BUILT_NUGETS_PATH=$PKG_DIR
 echo
 echo "Use $REPO_ROOT/tests/Aspire.Workload.Tests/data/nuget8.config as your local nuget.config to ensure the packages can be restored."
+//commit 
+//commit
