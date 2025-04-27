@@ -183,7 +183,7 @@ namespace Aspire.Hosting.Azure
         public bool? RequiresDuplicateDetection { get { throw null; } set { } }
 
         public string TopicName { get { throw null; } set { } }
-
+//code changes 
         void IResourceWithAzureFunctionsConfig.ApplyAzureFunctionsConfiguration(System.Collections.Generic.IDictionary<string, object> target, string connectionName) { }
     }
 }
