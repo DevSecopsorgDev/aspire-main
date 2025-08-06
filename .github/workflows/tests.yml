@@ -261,7 +261,7 @@ jobs:
     needs: [test]
     steps:
       # get all the test-job-result* artifacts into a single directory
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           pattern: test-job-result-*
           merge-multiple: true
